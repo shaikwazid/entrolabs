@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wazidprofile/static/css/main.eec03fdb.css",
-    "main.js": "/wazidprofile/static/js/main.df378f57.js",
+    "main.js": "/wazidprofile/static/js/main.57be692a.js",
     "static/js/453.a4249beb.chunk.js": "/wazidprofile/static/js/453.a4249beb.chunk.js",
     "static/media/cal.png": "/wazidprofile/static/media/cal.945cda0b613d536d5680.png",
     "static/media/clients.png": "/wazidprofile/static/media/clients.849d6db4b4e47f352a19.png",
@@ -58,11 +58,11 @@
     "static/media/DigiSprint.png": "/wazidprofile/static/media/DigiSprint.05a739480cbffed5b226.png",
     "index.html": "/wazidprofile/index.html",
     "main.eec03fdb.css.map": "/wazidprofile/static/css/main.eec03fdb.css.map",
-    "main.df378f57.js.map": "/wazidprofile/static/js/main.df378f57.js.map",
+    "main.57be692a.js.map": "/wazidprofile/static/js/main.57be692a.js.map",
     "453.a4249beb.chunk.js.map": "/wazidprofile/static/js/453.a4249beb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eec03fdb.css",
-    "static/js/main.df378f57.js"
+    "static/js/main.57be692a.js"
   ]
 }
