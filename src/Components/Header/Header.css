@@ -1,0 +1,226 @@
+/* ================= FIXED HEADER ================= */
+
+
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 999999999;
+  width: 100%;
+  overflow: visible;
+  padding: 0px 0px;
+
+}
+
+/* blur + scroll shadow */
+.navbar-custom {
+  transition: all .3s ease;
+  background: #fff;
+  /* background: rgba(255, 255, 255, 0.85); */
+  /* backdrop-filter: blur(10px); */
+}
+
+.header.scrolled .navbar-custom {
+  background: #4f6339 !important;
+  /* background: rgba(255, 255, 255, 0.95); */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* animated background */
+/* .header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg,
+      #ffffff 0%,
+      #f7f9ff 20%,
+      #eef3ff 50%,
+      #f7f9ff 80%,
+      #ffffff 100%);
+  background-size: 300% 100%;
+  animation: headerMove 14s linear infinite;
+  z-index: 0;
+}
+
+@keyframes headerMove {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 300% 0%;
+  }
+} */
+
+.header .navbar {
+  position: relative;
+  z-index: 2;
+  /* border-radius: 16px; */
+  background: transparent !important;
+}
+
+
+/* ================= NAV STYLE ================= */
+
+.navbar-nav {
+  align-items: center;
+  background: #ffffffb8 !important;
+  /* background: #fff !important; */
+  border-radius: 22px;
+  padding: 6px 8px;
+}
+
+.navbar .nav-link,
+.dropdown-toggle-custom {
+  position: relative;
+  font-weight: 500;
+  color: #1a1a1a;
+  padding: 8px 16px;
+  margin-left: 6px;
+  border-radius: 8px;
+  transition: .3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+/* hover background animation */
+.navbar .nav-link::before,
+.dropdown-toggle-custom::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #ece8d3;
+  /* background: #eef4ff; */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: .3s ease;
+  border-top-left-radius: 16px !important;
+  border-top-right-radius: 16px !important;
+  border-radius: 6px;
+  /* border-radius: 8px; */
+  z-index: -1;
+}
+
+.navbar .nav-link:hover::before,
+.dropdown-toggle-custom:hover::before,
+.navbar .nav-link.active::before {
+  transform: scaleX(1);
+}
+
+
+/* underline animation */
+.navbar .nav-link::after,
+.dropdown-toggle-custom::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  bottom: 4px;
+  width: 0%;
+  height: 2px;
+  background: #4f6339;
+  /* background: #0d6efd; */
+  transition: .3s ease;
+}
+
+.navbar .nav-link:hover::after,
+.dropdown-toggle-custom:hover::after,
+.navbar .nav-link.active::after {
+  width: calc(100% - 32px);
+}
+
+.navbar .nav-link:hover,
+.dropdown-toggle-custom:hover,
+.navbar .nav-link.active {
+  color: #493932;
+  /* color: #0d6efd; */
+}
+
+
+/* ================= DROPDOWN ICON ================= */
+
+.dropdown-icon {
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+  transform: rotate(45deg);
+  transition: .3s ease;
+  margin-top: -2px;
+}
+
+.nav-item.dropdown:hover .dropdown-icon {
+  transform: rotate(225deg);
+}
+
+
+/* ================= DROPDOWN ================= */
+
+.dropdown-menu {
+  border: none;
+  border-radius: 14px;
+  padding: 10px 0;
+  margin-top: 12px;
+  min-width: 230px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+
+  opacity: 0;
+  transform: translateY(15px);
+  visibility: hidden;
+  transition: .25s ease;
+}
+
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+.dropdown-item {
+  padding: 10px 22px;
+  transition: .25s ease;
+}
+
+.dropdown-item:hover {
+  background: #f3f7ff;
+  /* background: #f3f7ff; */
+  color: #4f6339;
+  padding-left: 28px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 991px) {
+
+  .navbar-collapse {
+    background: white;
+    padding: 18px;
+    border-radius: 16px;
+    margin-top: 12px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+  }
+
+  .navbar .nav-link,
+  .dropdown-toggle-custom {
+    margin-left: 0;
+    padding: 10px 14px;
+  }
+
+  .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    margin-top: 5px;
+    display: none;
+  }
+
+  .dropdown.show .dropdown-menu {
+    display: block;
+  }
+}

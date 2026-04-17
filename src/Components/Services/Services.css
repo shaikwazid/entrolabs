@@ -1,0 +1,127 @@
+/* ================= SECTION ================= */
+.services-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f9faf7, #ffffff);
+}
+
+/* ================= HEADER ================= */
+.services-header h1 {
+    font-size: 46px;
+    font-weight: 800;
+    color: #493932;
+}
+
+.services-header p {
+    color: #666;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+/* ================= INTRO ================= */
+.services-intro {
+    max-width: 850px;
+    margin: 40px auto;
+    text-align: center;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* ================= ROW ================= */
+.service-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin: 100px 0;
+}
+
+/* reverse layout */
+.service-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* ================= IMAGE ================= */
+.service-image {
+    flex: 1;
+    position: relative;
+}
+
+.service-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+}
+
+.service-row:hover img {
+    transform: scale(1.03);
+}
+
+/* ================= TEXT ================= */
+.service-text {
+    flex: 1;
+}
+
+.service-text h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #4f6339;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+/* underline effect */
+.service-text h2::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #4f6339;
+    display: block;
+    margin-top: 8px;
+}
+
+.service-text p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+/* ================= CTA ================= */
+.services-cta {
+    margin-top: 100px;
+    padding: 60px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #4f6339, #493932);
+    color: white;
+}
+
+.services-cta h3 {
+    font-size: 28px;
+}
+
+.services-cta button {
+    margin-top: 15px;
+    padding: 12px 28px;
+    border-radius: 10px;
+    border: none;
+    background: white;
+    color: #4f6339;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.services-cta button:hover {
+    transform: translateY(-2px);
+    background: #f1f1f1;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+    .service-row {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .service-text h2::after {
+        margin: 10px auto;
+    }
+}

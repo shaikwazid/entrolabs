@@ -1,0 +1,483 @@
+/* ================= SECTION ================= */
+.about-section {
+    padding: 80px 0;
+    background: #f6f7f5;
+}
+
+/* ================= IMAGE ================= */
+.about-img img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* ================= CONTENT ================= */
+.about-content {
+    padding: 0 20px;
+}
+
+.experience {
+    font-size: 70px;
+    font-weight: 800;
+    color: #4f6339;
+    margin: 0;
+}
+
+.exp-text {
+    color: #4f6339;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.about-content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #493932;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.desc {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.about-btn {
+    background: #4f6339;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.about-btn:hover {
+    background: #493932;
+}
+
+/* ================= FEATURES ================= */
+.about-features {
+    border-left: 1px solid #ddd;
+    padding-left: 25px;
+}
+
+/* FEATURE BOX */
+.feature-box {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+/* ICON */
+.icon {
+    font-size: 50px;
+    color: #4f6339;
+    margin-top: 5px;
+}
+
+/* TEXT */
+.feature-box h5 {
+    font-weight: 600;
+    color: #493932;
+    margin-bottom: 5px;
+}
+
+.feature-box p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+    .about-features {
+        border-left: none;
+        padding-left: 0;
+        margin-top: 30px;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .experience {
+        font-size: 50px;
+    }
+}
+
+
+
+/* ================= STATS ================= */
+/* subtle pattern overlay */
+.stats-section {
+    background: linear-gradient(135deg, #4f6339, #493932);
+}
+
+.stats-section::before {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 20px 20px;
+    filter: none;
+    opacity: 0.4;
+}
+
+.stats-section::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    bottom: -150px;
+    right: -120px;
+    filter: blur(120px);
+}
+
+/* ================= GRID ================= */
+
+/* ================= SECTION ================= */
+.stats-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #4f6339, #493932);
+    position: relative;
+    overflow: hidden;
+}
+
+/* background pattern */
+.stats-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 22px 22px;
+    opacity: 0.4;
+}
+
+/* glowing blobs */
+.stats-section::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    top: -120px;
+    right: -120px;
+    filter: blur(120px);
+}
+
+/* ================= GRID ================= */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+/* ================= CARD ================= */
+.stat-card {
+    position: relative;
+    padding: 35px 25px;
+    border-radius: 24px;
+    text-align: center;
+
+    /* glass effect */
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+    transition: all 0.5s ease;
+}
+
+/* gradient border glow */
+.stat-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 24px;
+    padding: 1px;
+    background: linear-gradient(135deg, #ffffff40, #ffffff10);
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+    opacity: 0.5;
+}
+
+/* soft glow inside */
+.stat-card::after {
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    top: -100px;
+    left: -100px;
+    filter: blur(80px);
+}
+
+/* ================= IMAGE ================= */
+.stat-card img {
+    width: 80px;
+    margin-bottom: 15px;
+    transition: 0.5s ease;
+    filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.3));
+}
+
+/* ================= TEXT ================= */
+.stat-card h3 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* ================= HOVER ================= */
+.stat-card:hover {
+    transform: translateY(-15px) scale(1.06);
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* icon animation */
+.stat-card:hover img {
+    transform: scale(1.25) rotate(10deg);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ================= SECTION ================= */
+.history-section {
+    padding: 100px 0;
+    background: #f7f9f6;
+}
+
+/* ================= IMAGE ================= */
+.history-img img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= CONTENT ================= */
+.history-content {
+    padding-left: 30px;
+}
+
+/* badge */
+.badge {
+    display: inline-block;
+    background: rgba(79, 99, 57, 0.1);
+    color: #4f6339;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+/* experience */
+.experience {
+    color: #4f6339;
+    font-size: 60px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+/* title */
+.history-content h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #493932;
+    margin-bottom: 15px;
+}
+
+/* paragraphs */
+.history-content p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* highlight name */
+.history-content strong {
+    color: #4f6339;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+    .history-content {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+
+    .history-content {
+        text-align: center;
+    }
+}
+
+/* ================= SECTION ================= */
+.team-section {
+    padding: 110px 0;
+    background: #f7f9f6;
+}
+
+/* ================= HEADER ================= */
+.team-header {
+    max-width: 600px;
+    margin-bottom: 80px;
+}
+
+.team-subtitle {
+    color: #4f6339;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.team-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #493932;
+}
+
+/* ================= ITEM ================= */
+.team-item {
+    text-align: center;
+    padding: 25px 20px;
+    border-radius: 16px;
+
+    background: rgba(79, 99, 57, 0.04);
+    /* 🌿 soft brand tint */
+
+    transition: 0.4s ease;
+}
+
+/* hover */
+.team-item:hover {
+    transform: translateY(-6px);
+    background: rgba(79, 99, 57, 0.08);
+}
+
+/* ================= IMAGE ================= */
+.team-item img {
+    width: 140px;
+    /* 🔥 reduced size */
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* 🔥 circle (premium feel) */
+
+    border: 4px solid #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+    margin-bottom: 15px;
+}
+
+/* ================= TEXT ================= */
+.team-text {
+    margin-top: 10px;
+}
+
+/* accent line */
+.team-text::before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: #4f6339;
+    display: block;
+    margin: 10px auto;
+}
+
+/* name */
+.team-text h4 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #493932;
+    margin-bottom: 5px;
+}
+
+/* role */
+.team-text p {
+    font-size: 13px;
+    color: #4f6339 !important;
+    letter-spacing: 1px;
+}
+
+/* ================= SOCIAL ================= */
+.team-social {
+    justify-content: center;
+    margin-top: 12px;
+    gap: 8px;
+}
+
+/* icons */
+.team-social .btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    background: #fff;
+    border: 1px solid #eee;
+    color: #4f6339;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+/* hover */
+.team-social .btn:hover {
+    background: #4f6339;
+    color: #fff;
+    border-color: #4f6339;
+}
+
+.team-social svg {
+    font-size: 16px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .team-item {
+        padding: 20px;
+    }
+
+    .team-item img {
+        width: 120px;
+        height: 120px;
+    }
+}

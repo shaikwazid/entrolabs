@@ -1,0 +1,157 @@
+/* gradient container */
+
+.features-bg {
+    padding: 50px;
+    /* background-image: url("../../assets/bg_images/bg_plain.jpeg"); */
+    /* background-image: url("../../assets/bg_images/bg_services.jpeg"); */
+    background-size: cover;
+    background-position: center;
+    /* border-radius:32px; */
+
+    /* background: linear-gradient(135deg,
+            #f4d7b4 0%,
+            #efbfae 25%,
+            #d2d9f6 60%,
+            #c8efe8 100%); */
+
+    /* box-shadow: 0 20px 60px rgba(0, 0, 0, .05); */
+}
+
+
+/* card */
+
+.feature-card {
+    /* background: #fff; */
+
+    /* border-radius: 26px; */
+    padding: 4px 20px;
+    /* padding: 20px; */
+    /* padding:28px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, .06), 0 6px 4px rgb(255 129 0); */
+
+    /* border: 1px solid #f39c4a; */
+    border-left: 1px solid #4f6339;
+
+    transition: .3s ease;
+    overflow: hidden;
+    min-height: 170px;
+    /* background: linear-gradient(rgb(255 207 0 / 18%), rgb(255 255 255 / 70%)), url('../../assets/bg_images/rays.jpg') center / cover no-repeat; */
+}
+
+.feature-card:hover {
+    transform: translateY(-3px);
+    /* background: #4f6339; */
+    background: linear-gradient(rgba(166, 255, 0, 0.18), rgba(255, 255, 255, 0.468)), url('../../assets/bg_images/rays.jpg') center / cover no-repeat;
+
+}
+
+
+/* .feature-card:hover h4 {
+    color: #fff;
+}
+
+.feature-card:hover h4 span {
+    color: #ece8d3;
+} */
+
+/* .feature-card:hover p {
+    color: #fff;
+} */
+
+
+/* content */
+
+.feature-content {
+    flex: 1;
+}
+
+.feature-content h4 {
+    font-size: 20px;
+    /* font-size:18px; */
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #4f6339;
+}
+
+.feature-content h4 span {
+    color: #493932;
+}
+
+.feature-content p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* image */
+
+.feature-img {
+    width: 95px;
+    height: 95px;
+    border-radius: 18px;
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.feature-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* melt shade effect */
+
+.feature-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40px;
+    height: 100%;
+    width: 80px;
+
+    background: linear-gradient(to left,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, .9),
+            #fff);
+}
+
+
+/* optional soft glow */
+
+.feature-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg,
+            rgba(255, 255, 255, .15),
+            transparent);
+    opacity: .6;
+}
+
+
+/* responsive */
+
+@media(max-width:768px) {
+
+    .features-bg {
+        padding: 25px;
+    }
+
+    .feature-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-img {
+        width: 80px;
+        height: 80px;
+    }
+
+}

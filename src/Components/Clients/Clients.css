@@ -1,0 +1,114 @@
+/* =========================
+   CLIENTS SECTION (PLAIN)
+========================= */
+.clients-wrapper {
+   padding: 40px 40px;
+   text-align: center;
+   /* background: #ffffff; */
+   /* plain white */
+}
+
+/* TITLE */
+.clients-wrapper h2 {
+   font-size: 34px;
+   font-weight: 700;
+   color: #111;
+   margin-bottom: 40px;
+}
+
+/* =========================
+   GRID
+========================= */
+.grid {
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   gap: 20px;
+   padding: 20px;
+}
+
+/* =========================
+   SQUARE CARD
+========================= */
+.card {
+
+   /* square */
+   border-radius: 12px !important;
+   /* background: #ffffff; */
+   border: 1px solid #fff;
+   transition: all 0.3s ease;
+   padding: 3px !important;
+   background: #fff;
+   box-shadow: 0 20px 60px rgba(163, 162, 162, 0.08);
+
+
+}
+
+.card-body {
+   /* aspect-ratio: 1 / 1; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+   border-radius: 12px;
+   background: linear-gradient(#ffffff73, rgba(255, 255, 255, 0.468), rgb(241 159 10 / 18%));
+   background: linear-gradient(to bottom,
+         #fcebd6 0%,
+         #fdf9ed 40%,
+         #ffffff 70%,
+         #ffffff 100%);
+   /* background: linear-gradient(to bottom,
+         rgba(143, 166, 58, 0.9) 0%,
+         rgba(172, 194, 79, 0.6) 40%,
+         rgba(210, 230, 140, 0.3) 70%,
+         rgba(255, 255, 255, 1) 100%); */
+}
+
+/* hover */
+.card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   LOGO
+========================= */
+.card img {
+   /* max-width: 100%;
+   max-height: 100%; */
+   max-width: 125%;
+   max-height: 125%;
+   object-fit: cover;
+   /* object-fit: contain; */
+
+   /* filter: grayscale(100%); */
+   transition: 0.3s ease;
+   /* box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08); */
+}
+
+/* hover logo */
+.card:hover img {
+   filter: grayscale(0%);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+   .grid {
+      grid-template-columns: repeat(4, 1fr);
+   }
+}
+
+@media (max-width: 576px) {
+   .grid {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .clients-wrapper {
+      padding: 60px 20px;
+   }
+
+   .clients-wrapper h2 {
+      font-size: 26px;
+   }
+}

@@ -1,0 +1,194 @@
+/* ===============================
+   LUXURY TITLE
+================================ */
+
+.lux-title {
+   margin-bottom: 30px;
+   position: relative;
+}
+
+.lux-title.center {
+   text-align: center;
+}
+
+
+/* badge */
+
+.lux-badge {
+   display: inline-block;
+   font-size: 12px;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   /* color: #2e303e; */
+   color: #4f6339;
+   /* color: rgb(11 33 94); */
+   /* color: #999; */
+   font-weight: 900;
+   margin-bottom: 12px;
+}
+
+
+/* heading */
+
+.lux-heading {
+   font-size: 35px;
+   font-weight: 700;
+   color: #493932;
+   /* color: #111; */
+   letter-spacing: -.5px;
+}
+
+.lux-heading span {
+   background: linear-gradient(120deg, #2e303e, #4f6339);
+   /* background: linear-gradient(120deg, #0d6efd, #5aaf69, #4fc964); */
+   /* background:linear-gradient(120deg,#c9a94f,#f5e6b3,#c9a94f); */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+
+/* divider */
+
+.lux-divider {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 18px;
+   gap: 12px;
+}
+
+.lux-divider::before,
+.lux-divider::after {
+   content: "";
+   width: 60px;
+   height: 1px;
+   background: linear-gradient(to right, transparent, #493932, transparent);
+   /* background: linear-gradient(to right, transparent, #75d46a, transparent); */
+   /* background:linear-gradient(to right,transparent,#d4b86a,transparent); */
+}
+
+.lux-divider span {
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background: linear-gradient(120deg, #4b5d3a, #d6f5b3);
+   /* background: linear-gradient(120deg, #4fc9a8, #d6f5b3); */
+   /* background:linear-gradient(120deg,#c9a94f,#f5e6b3); */
+   box-shadow: 0 0 10px rgba(201, 169, 79, .5);
+}
+
+
+/* soft glow */
+/* 
+.lux-title::after {
+   content: "";
+   position: absolute;
+   width: 300px;
+   height: 150px;
+   background: radial-gradient(rgba(201, 169, 79, .15),
+         transparent);
+   left: 50%;
+   top: -40px;
+   transform: translateX(-50%);
+   z-index: -1;
+} */
+
+
+/* responsive */
+
+@media(max-width:768px) {
+
+   .lux-heading {
+      font-size: 30px;
+   }
+
+}
+
+
+/* ===============================
+   VARIANT TWO (ORANGE)
+================================ */
+
+.lux-heading-two {
+   font-size: 44px;
+   font-weight: 700;
+   color: #fefefe;
+   /* color: #111; */
+   letter-spacing: -.5px;
+}
+
+.lux-heading-two span {
+   background: linear-gradient(120deg, #493932, #ece8d3, #4f6339);
+   /* background: linear-gradient(120deg, #ff7a18, #ffb347, #ff4e50); */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.lux-divider-two::before,
+.lux-divider-two::after {
+   background: linear-gradient(to right,
+         transparent,
+         #ff7a18,
+         transparent);
+}
+
+.lux-divider-two span {
+   background: linear-gradient(120deg, #ff7a18, #ffb347);
+   box-shadow: 0 0 10px rgba(255, 122, 24, .4);
+}
+
+.lux-title-two::after {
+   background: radial-gradient(rgba(255, 122, 24, .15),
+         transparent);
+}
+
+
+
+/* ===============================
+   VARIANT THREE (BLUE / PURPLE)
+================================ */
+
+.lux-heading-three span {
+   background: linear-gradient(120deg, #6366f1, #3b82f6, #06b6d4);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.lux-divider-three::before,
+.lux-divider-three::after {
+   background: linear-gradient(to right,
+         transparent,
+         #3b82f6,
+         transparent);
+}
+
+.lux-divider-three span {
+   background: linear-gradient(120deg, #6366f1, #06b6d4);
+   box-shadow: 0 0 10px rgba(59, 130, 246, .4);
+}
+
+.lux-title-three::after {
+   background: radial-gradient(rgba(59, 130, 246, .15),
+         transparent);
+}
+
+.lux-heading span {
+   background: linear-gradient(120deg, #2e303e, #4f6339);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: shimmer 3s infinite linear;
+}
+
+@keyframes shimmer {
+   0% {
+      filter: brightness(1);
+   }
+
+   50% {
+      filter: brightness(1.4);
+   }
+
+   100% {
+      filter: brightness(1);
+   }
+}

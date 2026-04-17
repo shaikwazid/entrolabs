@@ -1,0 +1,126 @@
+.projects-section {
+    padding: 80px 0;
+    /* background: linear-gradient(135deg, #f9faf7, #ffffff); */
+}
+
+/* HEADER */
+.projects-header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #493932;
+}
+
+.projects-header p {
+    max-width: 600px;
+    margin: auto;
+    color: #666;
+}
+
+/* CARD */
+.project-card {
+    /* background: #fff; */
+    background: linear-gradient(#ffffff73, rgba(255, 255, 255, 0.468), rgb(241 159 10 / 18%));
+    border-radius: 16px;
+    overflow: hidden;
+    transition: 0.4s;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border: 3px solid #fff;
+    min-height: 260px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGE */
+.project-img {
+    position: relative;
+    overflow: hidden;
+    /* background: #4f6339; */
+}
+
+.project-img img {
+    width: 100%;
+    height: 110px;
+    object-fit: contain;
+    transition: 0.5s;
+}
+
+.project-card:hover img {
+    transform: scale(1.1);
+}
+
+/* OVERLAY */
+.project-card .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(79, 99, 57, 0.9);
+    color: #fff;
+    opacity: 0;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.project-card:hover .overlay {
+    opacity: 1;
+}
+
+.project-card .overlay h5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.project-card .overlay p {
+    font-size: 15px;
+}
+
+/* CONTENT */
+.project-content {
+    padding: 20px;
+}
+
+.project-content h5 {
+    color: #493932;
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.project-content p {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* TECH TAGS */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tech-stack span {
+    background: #eef3ec;
+    color: #4f6339;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.tech-stack span:hover {
+    background: #4f6339;
+    color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .projects-header h1 {
+        font-size: 28px;
+    }
+}

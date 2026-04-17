@@ -1,0 +1,132 @@
+/* =========================
+   SECTION
+========================= */
+
+.stats-3d-premium {
+   padding: 90px 0;
+   padding-bottom: 150px;
+   background-image: url("../../assets/bg_images/bg_light.jpeg");
+   background-size: cover;
+   background-position: bottom;
+   background-repeat: no-repeat;
+   /* background:linear-gradient(180deg,#ffffff,#f5f8ff); */
+   position: relative;
+}
+
+/* soft background */
+
+.stats-3d-premium::before {
+   content: "";
+   position: absolute;
+   width: 100px;
+   height: 300px;
+   background: radial-gradient(rgba(13, 110, 253, .1),
+         transparent);
+   top: -80px;
+   left: 100px;
+   filter: blur(100px);
+}
+
+.stats-3d-premium::after {
+   content: "";
+   position: absolute;
+   width: 100px;
+   height: 300px;
+   background: radial-gradient(rgba(79, 201, 168, .1),
+         transparent);
+   bottom: -80px;
+   right: 100px;
+   filter: blur(100px);
+}
+
+/* =========================
+   CARD
+========================= */
+
+.stat-card-3d {
+   /* background: #ffffff40; */
+   border-radius: 28px;
+   padding: 10px;
+   text-align: center;
+   border: 2px solid #fff;
+   box-shadow:
+      0 20px 60px rgba(0, 0, 0, .08);
+
+   transition: .4s ease;
+   position: relative;
+
+   background: linear-gradient(#ffffff73, rgba(255, 255, 255, 0.468), rgb(241 159 10 / 18%));
+}
+
+/* hover lift (only interaction now) */
+
+.stat-card-3d:hover {
+   transform: translateY(-12px) scale(1.04);
+   box-shadow:
+      0 30px 80px rgba(0, 0, 0, .15);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.stat-image {
+   /* height: 140px; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* margin-bottom: 5px; */
+}
+
+.stat-image img {
+   max-height: 120px;
+   object-fit: contain;
+   transition: .4s ease;
+   border-radius: 50%;
+}
+
+/* subtle hover effect */
+
+.stat-card-3d:hover .stat-image img {
+   transform: scale(1.08) rotate(-2deg);
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.stat-info h2 {
+   font-size: 38px;
+   font-weight: 700;
+   margin-bottom: 5px;
+   color: #2e303e;
+   /* color: #111; */
+}
+
+.stat-info p {
+   font-size: 15px;
+   color: #493932;
+   /* color: #666; */
+   font-weight: 600;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px) {
+
+   .stat-info h2 {
+      font-size: 28px;
+   }
+
+   .stat-image {
+      height: 100px;
+   }
+
+}
+
+.stats-3d-premium {
+   position: relative;
+   z-index: 2;
+}

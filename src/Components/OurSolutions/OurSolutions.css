@@ -1,0 +1,205 @@
+/* =========================
+   SECTION
+========================= */
+
+.solutions-section {
+  padding: 60px 0;
+  /* background: #fdfaf6; */
+  /* background: #2e303e; */
+  /* background: #ece8d3; */
+  /* background:#f8faff; */
+}
+
+/* .section-title span{
+color:#0d6efd;
+font-weight:600;
+}
+
+.section-title h2{
+font-size:38px;
+font-weight:800;
+margin-bottom:50px;
+} */
+
+
+/* =========================
+   LUX WRAPPER
+========================= */
+
+.lux-wrapper .cat-item {
+  text-decoration: none;
+  display: block;
+}
+
+/* Card */
+
+.lux-wrapper .lux-card {
+  position: relative;
+  padding: 20px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #ffffff, #f6f7fb);
+  box-shadow:
+    0 12px 25px rgba(0, 0, 0, .08),
+    inset 0 1px 0 rgba(255, 255, 255, .6);
+  transition: all .45s cubic-bezier(.25, .8, .25, 1);
+  overflow: hidden;
+  border: 2px solid #fff;
+  height: 100%;
+}
+
+/* Gradient glow */
+
+.lux-wrapper .lux-card::after {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background: radial-gradient(circle, var(--glow), transparent 60%);
+  opacity: .35;
+  transition: .5s;
+}
+
+.lux-wrapper .lux-card:hover::after {
+  opacity: .7;
+}
+
+/* Hover lift */
+
+.lux-wrapper .lux-card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 25px 55px rgba(0, 0, 0, .18);
+}
+
+
+/* Count pill */
+
+.lux-wrapper .lux-count {
+  position: absolute;
+  top: 15px;
+  right: -4px;
+  padding: 1px 18px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, var(--c1), var(--c2));
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+  z-index: 2;
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.lux-wrapper .lux-image {
+  height: 140px;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.lux-wrapper .lux-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .4s ease;
+}
+
+.lux-wrapper .lux-card:hover .lux-image img {
+  transform: scale(1.08);
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.lux-wrapper .lux-content {
+  text-align: left;
+}
+
+.lux-wrapper .lux-content h6 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #222;
+  margin-top: 5px;
+}
+
+.lux-wrapper .lux-content p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+  line-height: 1.6;
+  margin: 0px;
+}
+
+
+/* =========================
+   COLOR THEMES
+========================= */
+
+.lux-wrapper .orange {
+  --c1: #ff9800;
+  --c2: #ffb347;
+  --glow: #ffb347;
+}
+
+.lux-wrapper .green {
+  --c1: #22c55e;
+  --c2: #86efac;
+  --glow: #86efac;
+}
+
+.lux-wrapper .blue {
+  --c1: #3b82f6;
+  --c2: #93c5fd;
+  --glow: #93c5fd;
+}
+
+.lux-wrapper .red {
+  --c1: #dc2626;
+  --c2: #fca5a5;
+  --glow: #fca5a5;
+}
+
+.lux-wrapper .brinjal {
+  --c1: #6b21a8;
+  --c2: #d8b4fe;
+  --glow: #c084fc;
+}
+
+
+/* =========================
+   HOVER TEXT COLOR
+========================= */
+
+.lux-wrapper .lux-card:hover h6 {
+  color: #000;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px) {
+
+  .lux-wrapper .lux-image {
+    height: 120px;
+  }
+
+}
+
+@media(max-width:768px) {
+
+  .section-title h2 {
+    font-size: 28px;
+  }
+
+  .lux-wrapper .lux-image {
+    height: 110px;
+  }
+
+}
