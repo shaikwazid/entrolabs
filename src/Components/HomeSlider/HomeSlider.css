@@ -17,6 +17,7 @@
     background-size: contain;
     background-position: top;
     position: relative;
+    background-repeat: no-repeat;
 }
 
 /* ===============================
