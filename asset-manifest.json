@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/entrolabs/static/css/main.2db59b2b.css",
+    "main.css": "/entrolabs/static/css/main.4e6e1528.css",
     "main.js": "/entrolabs/static/js/main.38ec8a6b.js",
     "static/js/453.a4249beb.chunk.js": "/entrolabs/static/js/453.a4249beb.chunk.js",
     "static/media/cal.png": "/entrolabs/static/media/cal.945cda0b613d536d5680.png",
@@ -57,12 +57,12 @@
     "static/media/sreenidhilogo.png": "/entrolabs/static/media/sreenidhilogo.cf2fecba7acdb8197b15.png",
     "static/media/DigiSprint.png": "/entrolabs/static/media/DigiSprint.05a739480cbffed5b226.png",
     "index.html": "/entrolabs/index.html",
-    "main.2db59b2b.css.map": "/entrolabs/static/css/main.2db59b2b.css.map",
+    "main.4e6e1528.css.map": "/entrolabs/static/css/main.4e6e1528.css.map",
     "main.38ec8a6b.js.map": "/entrolabs/static/js/main.38ec8a6b.js.map",
     "453.a4249beb.chunk.js.map": "/entrolabs/static/js/453.a4249beb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2db59b2b.css",
+    "static/css/main.4e6e1528.css",
     "static/js/main.38ec8a6b.js"
   ]
 }
