@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 import logo1 from "../../assets/logo-white.png";
-// import logo1 from "../../assets/logo-black.png";
-import { NavLink } from 'react-router-dom';
-import './Header.css'
+import { NavLink } from "react-router-dom";
+import "./Header.css";
+import { techData } from "../Techonologies/techdata";
+import { RiMenuFoldFill, RiCloseLine } from "react-icons/ri";
 
 const Header = () => {
-
     const [scrolled, setScrolled] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
+    // ✅ Scroll effect
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 50);
@@ -17,98 +19,140 @@ const Header = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    // ✅ Close menu on nav click
+    const handleNavClick = () => {
+        setMenuOpen(false);
+    };
+
     return (
         <div className={`header ${scrolled ? "scrolled" : ""}`}>
             <nav className="navbar navbar-expand-lg navbar-light navbar-custom py-2">
                 <div className="container">
 
-                    <NavLink className="navbar-brand" to="/">
-                        <img src={logo1} alt="logo" style={{ width: '150px' }} />
+                    {/* LOGO */}
+                    <NavLink className="navbar-brand" to="/" onClick={handleNavClick}>
+                        <img src={logo1} alt="logo" style={{ width: "150px" }} />
                     </NavLink>
 
+                    {/* TOGGLER */}
                     <button
-                        className="navbar-toggler"
+                        className="navbar-toggler border-0"
                         type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown"
+                        onClick={() => setMenuOpen(!menuOpen)}
                     >
-                        <span className="navbar-toggler-icon"></span>
+                        {menuOpen ? <RiCloseLine size={30} /> : <RiMenuFoldFill size={28} />}
                     </button>
 
-                    <div className="collapse navbar-collapse" id="navbarNavDropdown">
+                    {/* NAVBAR CONTENT */}
+                    <div className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`}>
                         <ul className="navbar-nav ms-auto align-items-lg-center">
 
                             <li className="nav-item">
-                                <NavLink to="/" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+                                <NavLink
+                                    to="/"
+                                    onClick={handleNavClick}
+                                    className={({ isActive }) =>
+                                        isActive ? "nav-link active" : "nav-link"
+                                    }
+                                >
                                     Home
                                 </NavLink>
                             </li>
 
                             <li className="nav-item">
-                                <NavLink to="/about" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+                                <NavLink
+                                    to="/about"
+                                    onClick={handleNavClick}
+                                    className={({ isActive }) =>
+                                        isActive ? "nav-link active" : "nav-link"
+                                    }
+                                >
                                     About Us
                                 </NavLink>
                             </li>
 
                             <li className="nav-item">
-                                <NavLink to="/services" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+                                <NavLink
+                                    to="/services"
+                                    onClick={handleNavClick}
+                                    className={({ isActive }) =>
+                                        isActive ? "nav-link active" : "nav-link"
+                                    }
+                                >
                                     Services
                                 </NavLink>
                             </li>
 
+                            {/* TECHNOLOGIES DROPDOWN */}
                             <li className="nav-item dropdown">
-                                <a
-                                    className="nav-link dropdown-toggle-custom"
-                                    role="button"
+                                <button
+                                    className="nav-link dropdown-toggle-custom btn btn-link"
                                     data-bs-toggle="dropdown"
                                 >
                                     Technologies
                                     <span className="dropdown-icon"></span>
-                                </a>
+                                </button>
 
                                 <ul className="dropdown-menu">
-                                    <li>
-                                        <NavLink to="/mobile-app" className="dropdown-item">
-                                            Mobile App Development
-                                        </NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to="/web-app" className="dropdown-item">
-                                            Web Application Development
-                                        </NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to="/api" className="dropdown-item">
-                                            API Development
-                                        </NavLink>
-                                    </li>
+                                    {techData.map((tech) => (
+                                        <li key={tech.id}>
+                                            <NavLink
+                                                to={`/technologies/${tech.id}`}
+                                                onClick={handleNavClick}
+                                                className={({ isActive }) =>
+                                                    `dropdown-item ${isActive ? "active" : ""}`
+                                                }
+                                            >
+                                                {tech.title}
+                                            </NavLink>
+                                        </li>
+                                    ))}
                                 </ul>
                             </li>
 
                             <li className="nav-item">
-                                <NavLink to="/projects" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+                                <NavLink
+                                    to="/projects"
+                                    onClick={handleNavClick}
+                                    className={({ isActive }) =>
+                                        isActive ? "nav-link active" : "nav-link"
+                                    }
+                                >
                                     Projects
                                 </NavLink>
                             </li>
 
                             <li className="nav-item">
-                                <NavLink to="/careers" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+                                <NavLink
+                                    to="/careers"
+                                    onClick={handleNavClick}
+                                    className={({ isActive }) =>
+                                        isActive ? "nav-link active" : "nav-link"
+                                    }
+                                >
                                     Careers
                                 </NavLink>
                             </li>
 
                             <li className="nav-item">
-                                <NavLink to="/contact" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+                                <NavLink
+                                    to="/contact"
+                                    onClick={handleNavClick}
+                                    className={({ isActive }) =>
+                                        isActive ? "nav-link active" : "nav-link"
+                                    }
+                                >
                                     Contact Us
                                 </NavLink>
                             </li>
 
                         </ul>
                     </div>
+
                 </div>
             </nav>
         </div>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;

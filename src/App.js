@@ -11,6 +11,7 @@ import Contact from './Pages/Contact';
 import Projects from './Pages/Projects';
 import Careers from './Pages/Careers';
 import Home from './Pages/Home';
+import TechnologyDetails from './Components/Techonologies/TechnologyDetails';
 
 function App() {
 
@@ -83,6 +84,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/technologies/:id" element={<TechnologyDetails />} />
         </Routes>
       </div>
       <Footer />

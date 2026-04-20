@@ -21,6 +21,7 @@
 /* card */
 
 .feature-card {
+    position: relative;
     /* background: #fff; */
 
     /* border-radius: 26px; */
@@ -34,7 +35,7 @@
     /* box-shadow: 0 8px 20px rgba(0, 0, 0, .06), 0 6px 4px rgb(255 129 0); */
 
     /* border: 1px solid #f39c4a; */
-    border-left: 1px solid #4f6339;
+    /* border-left: 1px solid #4f6339; */
 
     transition: .3s ease;
     overflow: hidden;
@@ -154,4 +155,40 @@
         height: 80px;
     }
 
+}
+
+
+
+
+.sct-accent-top2 {
+    position: relative;
+}
+
+
+@media(max-width:768px) {
+    .feature-card {
+        border-left: 1px solid #4f6339;
+    }
+
+    .sct-accent-top2 {
+        display: none;
+    }
+
+
+}
+
+.sct-accent-top2 {
+    position: relative;
+}
+
+.sct-accent-top2::before {
+    content: '';
+    position: absolute;
+    top: -84px;
+    /* bottom: 0; */
+    height: 172px;
+    left: -21px;
+    width: 2px;
+    background: linear-gradient(180deg, transparent, #4f6339 25%, #4f6339 75%, transparent);
+    z-index: 1;
 }

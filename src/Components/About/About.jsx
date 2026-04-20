@@ -156,7 +156,7 @@ const About = () => {
                         {/* RIGHT FEATURES */}
                         <motion.div
                             className="col-lg-3"
-                            variants={slideRight}
+                            variants={fadeUp}
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}

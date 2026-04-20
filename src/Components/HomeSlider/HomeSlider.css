@@ -262,3 +262,109 @@
         font-size: 20px;
     }
 }
+
+.slide-bg {
+    height: 560px;
+}
+
+
+/* ===============================
+   RESPONSIVE FIX (NO DESIGN CHANGE)
+================================ */
+
+/* Tablet */
+@media (max-width: 992px) {
+
+    .slide-bg {
+        height: 80vh;
+        background-size: cover !important;
+        /* fix empty space */
+    }
+
+    .content {
+        padding-left: 40px !important;
+        margin-top: 40px;
+    }
+
+    .content.theme-three {
+        padding-right: 60px !important;
+        padding-top: 60px !important;
+    }
+
+    .content h2 {
+        font-size: 40px !important;
+    }
+
+    .content p {
+        font-size: 36px !important;
+    }
+
+    .shape-image-animation {
+        height: 90px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .slide-bg {
+        height: 70vh;
+        background-size: cover !important;
+        background-position: center;
+    }
+
+    .overlay {
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    .content {
+        padding: 20px !important;
+        margin-top: 0 !important;
+        max-width: 100%;
+    }
+
+    .content.theme-one,
+    .content.theme-two,
+    .content.theme-three {
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100%;
+        padding: 0 !important;
+    }
+
+    .content h2 {
+        font-size: 28px !important;
+        line-height: 1.2;
+    }
+
+    .content p {
+        font-size: 22px !important;
+        line-height: 1.2;
+    }
+
+    .shape-image-animation {
+        height: 70px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+    .slide-bg {
+        height: 60vh;
+    }
+
+    .content h2 {
+        font-size: 22px !important;
+    }
+
+    .content p {
+        font-size: 18px !important;
+    }
+
+    .shape-image-animation {
+        height: 55px;
+    }
+}

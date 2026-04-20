@@ -61,6 +61,9 @@ const Features = ({ colClass = "col-lg-4 col-md-6", showTitle = true }) => {
               viewport={{ once: true }}
             >
               <div className="feature-card">
+                <div class="sct-accent-top2 line">
+
+                </div>
 
                 <div className="feature-content">
                   <h4>{item.title}</h4>

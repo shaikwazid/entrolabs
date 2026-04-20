@@ -192,6 +192,13 @@
   padding-left: 28px;
 }
 
+.dropdown-item.active {
+  background: #4f6339;
+  /* background: #f3f7ff; */
+  color: #fff;
+  padding-left: 28px;
+}
+
 
 /* ================= MOBILE ================= */
 
@@ -223,4 +230,13 @@
   .dropdown.show .dropdown-menu {
     display: block;
   }
+}
+
+#navbarNavDropdown {
+  background: #fff !important;
+}
+
+#navbarNavDropdown .navbar-toggler-icon {
+  width: 1rem !important;
+  height: 1rem !important;
 }

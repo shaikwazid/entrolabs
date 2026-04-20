@@ -54,7 +54,7 @@ export default function HomeSlider() {
                                         className="slide-bg"
                                         style={{
                                             backgroundImage: `url(${slide.bg})`,
-                                            height: "550px",
+                                            // height: "550px",
                                         }}
                                     >
                                         {/* wave animation */}

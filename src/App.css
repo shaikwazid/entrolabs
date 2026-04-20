@@ -378,3 +378,14 @@ body {
 }
 
 /* moving_waves_end */
+
+
+
+.navbar-toggler {
+  background: #fff !important;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  width: 1rem !important;
+  height: 1rem !important;
+}
