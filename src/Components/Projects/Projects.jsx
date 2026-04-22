@@ -7,6 +7,11 @@ import two from "../../assets/gif/web.png";
 
 const projectData = [
     {
+        title: "AP MEPMA",
+        desc: "To promote sustainable livelihoods for the urban poor, ",
+        img: two
+    },
+    {
         title: "SWM RFID",
         desc: "An IoT-Driven Garbage Collection Project",
         img: two

@@ -2,6 +2,7 @@ import React from 'react'
 import BreadCrumb from '../BreadCrumb/BreadCrumb'
 import './Careers.css'
 import { motion } from "framer-motion";
+import SectionTitle from '../SectionTitle/SectionTitle';
 
 const Careers = () => {
 
@@ -42,7 +43,12 @@ const Careers = () => {
                         transition={{ duration: 0.6 }}
                         viewport={{ once: true }}
                     >
-                        <h1>Join Our Team</h1>
+                        {/* <h1>Join Our Team</h1> */}
+                        <SectionTitle
+                            badge="Careers"
+                            title="Join Our "
+                            highlight="Team"
+                        />
                         <p>
                             Be part of an innovative IT company where creativity meets technology.
                             Grow your career with us and build impactful solutions.

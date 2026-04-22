@@ -1,9 +1,10 @@
 /* ================= GLOBAL SECTION ================= */
 .careers-section {
-    padding: 100px 0;
+    padding: 40px 0;
     /* background: radial-gradient(circle at top left, #f4f7f2, #ffffff 60%); */
     background: #f9faf7;
     position: relative;
+    padding-bottom: 70px;
     overflow: hidden;
 }
 

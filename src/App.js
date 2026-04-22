@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
+
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import About from './Pages/About';
@@ -12,6 +13,7 @@ import Projects from './Pages/Projects';
 import Careers from './Pages/Careers';
 import Home from './Pages/Home';
 import TechnologyDetails from './Components/Techonologies/TechnologyDetails';
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
 
@@ -24,8 +26,8 @@ function App() {
     let posX = 0;
     let posY = 0;
 
-    // mouse move
-    document.addEventListener("mousemove", (e) => {
+    // mouse move handler
+    const mouseMoveHandler = (e) => {
       mouseX = e.clientX;
       mouseY = e.clientY;
 
@@ -33,10 +35,14 @@ function App() {
         cursor.style.left = mouseX + "px";
         cursor.style.top = mouseY + "px";
       }
-    });
+    };
 
-    // smooth follower animation
-    function animate() {
+    document.addEventListener("mousemove", mouseMoveHandler);
+
+    // animation
+    let animationFrameId;
+
+    const animate = () => {
       posX += (mouseX - posX) * 0.15;
       posY += (mouseY - posY) * 0.15;
 
@@ -45,38 +51,56 @@ function App() {
         follower.style.top = posY + "px";
       }
 
-      requestAnimationFrame(animate);
-    }
+      animationFrameId = requestAnimationFrame(animate);
+    };
 
     animate();
 
-    // hover effect
+    // hover elements
     const hoverElements = document.querySelectorAll("a, button, .card");
 
-    hoverElements.forEach((el) => {
-      el.addEventListener("mouseenter", () => {
-        if (follower) {
-          follower.style.transform = "translate(-50%, -50%) scale(1.8)";
-        }
-      });
+    const handleMouseEnter = () => {
+      if (follower) {
+        follower.style.transform = "translate(-50%, -50%) scale(1.8)";
+      }
+    };
 
-      el.addEventListener("mouseleave", () => {
-        if (follower) {
-          follower.style.transform = "translate(-50%, -50%) scale(1)";
-        }
-      });
+    const handleMouseLeave = () => {
+      if (follower) {
+        follower.style.transform = "translate(-50%, -50%) scale(1)";
+      }
+    };
+
+    hoverElements.forEach((el) => {
+      el.addEventListener("mouseenter", handleMouseEnter);
+      el.addEventListener("mouseleave", handleMouseLeave);
     });
+
+    // ✅ cleanup (IMPORTANT)
+    return () => {
+      document.removeEventListener("mousemove", mouseMoveHandler);
+      cancelAnimationFrame(animationFrameId);
+
+      hoverElements.forEach((el) => {
+        el.removeEventListener("mouseenter", handleMouseEnter);
+        el.removeEventListener("mouseleave", handleMouseLeave);
+      });
+    };
 
   }, []);
 
   return (
     <div className="App">
+      {/* custom cursor */}
       <div className="custom-cursor"></div>
       <div className="cursor-follower"></div>
 
       <Header />
 
       <div>
+        {/* ✅ FIXED POSITION */}
+        <ScrollToTop />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -87,10 +111,8 @@ function App() {
           <Route path="/technologies/:id" element={<TechnologyDetails />} />
         </Routes>
       </div>
+
       <Footer />
-
-
-
     </div>
   );
 }

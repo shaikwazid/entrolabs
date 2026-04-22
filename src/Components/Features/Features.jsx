@@ -2,32 +2,37 @@ import React from "react";
 import "./Features.css";
 import { motion } from "framer-motion";
 import SectionTitle from "../SectionTitle/SectionTitle";
+import one from "../../assets/features/eps.jpg";
+import two from "../../assets/features/spe.jpg";
+import three from "../../assets/features/mobile_solutions.jpg";
+import four from "../../assets/features/bps.jpg";
+import five from "../../assets/features/industry.jpeg";
 
 const features = [
   {
     title: <>Enterprise Application <span>Services</span></>,
     desc: "Attractive and responsive web design is key to designing an engaging web experience for your users.",
-    img: "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=600"
+    img: one
   },
   {
     title: <>Software Product <span>Engineering</span></>,
     desc: "Our commitment to excellence, high technical standards and exceptional customer service.",
-    img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=600"
+    img: two
   },
   {
     title: <>Mobility <span>Solutions</span></>,
     desc: "We deliver iOS, Android and cross-platform mobile applications backed by years of experience.",
-    img: "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=600"
+    img: three
   },
   {
     title: <>Business Process <span>Services</span></>,
     desc: "We aim to transform your value-driven concepts into diligent solutions with the best software services.",
-    img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=600"
+    img: four
   },
   {
     title: <>Industry & Platform <span>Solutions</span></>,
     desc: "Secure hosting services, optimized performance and application maintenance.",
-    img: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=600"
+    img: five
   }
 ];
 
