@@ -184,9 +184,11 @@
 .sct-accent-top2::before {
     content: '';
     position: absolute;
-    top: -84px;
+    top: -60px;
+    /* top: -84px; */
     /* bottom: 0; */
-    height: 172px;
+    height: 120px;
+    /* height: 172px; */
     left: -21px;
     width: 2px;
     background: linear-gradient(180deg, transparent, #4f6339 25%, #4f6339 75%, transparent);

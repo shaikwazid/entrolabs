@@ -6,10 +6,10 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="ve-footer">
+    <footer className="ve-footer ">
 
       <div className="container">
-        <div className="row">
+        <div className="row ">
 
           {/* Brand */}
           <div className="col-12 col-sm-6 col-lg-4 mb-50">

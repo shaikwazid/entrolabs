@@ -16,9 +16,10 @@
 }
 
 .breadcrumb-content h1 {
-    font-size: 2.5rem;
+    font-size: 30px !important;
+    /* font-size: 2.5rem; */
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
     color: #fff !important;
 }
 

@@ -177,6 +177,7 @@ const Projects = () => {
 
                                         <div className="overlay">
                                             <h5>{project.title}</h5>
+
                                             <p>{project.desc}</p>
                                         </div>
                                     </div>
@@ -184,6 +185,7 @@ const Projects = () => {
                                     {/* CONTENT */}
                                     <div className="project-content">
                                         <h5>{project.title}</h5>
+                                        <div class="sct-accent-top mt-2 pb-3"></div>
                                         <p>{project.desc}</p>
                                     </div>
 

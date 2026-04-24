@@ -14,7 +14,7 @@
 ================================ */
 
 .slide-bg {
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: top;
     position: relative;
     background-repeat: no-repeat;
@@ -367,4 +367,12 @@
     .shape-image-animation {
         height: 55px;
     }
+}
+
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: var(--swiper-pagination-bottom, -4px) !important;
 }

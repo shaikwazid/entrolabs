@@ -55,7 +55,8 @@ export const techData = [
                 items: [
                     "React JS",
                     "Next JS",
-                    "HTML / CSS / JavaScript"
+                    "HTML / CSS ",
+                    "Java Script"
                 ]
             },
             {

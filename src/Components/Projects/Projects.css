@@ -82,7 +82,7 @@
 
 /* CONTENT */
 .project-content {
-    padding: 20px;
+    padding: 20px 4px;
 }
 
 .project-content h5 {
@@ -97,6 +97,7 @@
 .project-content p {
     font-size: 14px;
     text-align: center;
+    margin-bottom: 0px;
 }
 
 /* TECH TAGS */
@@ -125,4 +126,19 @@
     .projects-header h1 {
         font-size: 28px;
     }
+}
+
+.sct-accent-top {
+    position: relative;
+}
+
+.sct-accent-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #4f6339 25%, #4f6339 75%, transparent);
+    z-index: 1;
 }

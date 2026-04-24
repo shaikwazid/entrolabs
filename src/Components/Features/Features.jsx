@@ -38,7 +38,7 @@ const features = [
 
 const Features = ({ colClass = "col-lg-4 col-md-6", showTitle = true }) => {
   return (
-    <section className="features-bg">
+    <section className="features-bg f_shape">
       <div className="container-fluid">
 
         {/* ✅ TITLE CONTROLLED HERE */}

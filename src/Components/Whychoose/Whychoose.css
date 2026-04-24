@@ -98,10 +98,10 @@
 }
 
 /* subtle brand overlay */
-.why-img::after {
+/* .why-img::after {
     content: "";
     position: absolute;
     inset: 0;
     background: rgba(79, 99, 57, 0.15);
     border-radius: 20px;
-}
+} */
