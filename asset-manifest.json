@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/entrolabs/static/css/main.64bebd7d.css",
-    "main.js": "/entrolabs/static/js/main.34ed8be4.js",
+    "main.css": "/entrolabs/static/css/main.6908c78e.css",
+    "main.js": "/entrolabs/static/js/main.8af8e568.js",
     "static/js/453.a4249beb.chunk.js": "/entrolabs/static/js/453.a4249beb.chunk.js",
     "static/media/image 17.png": "/entrolabs/static/media/image 17.2c409e2dcd6ffe56f1e7.png",
     "static/media/image 18.png": "/entrolabs/static/media/image 18.f65b03d58113b330ad87.png",
@@ -32,6 +32,7 @@
     "static/media/spe.jpg": "/entrolabs/static/media/spe.de89753928da90c66703.jpg",
     "static/media/eps.jpg": "/entrolabs/static/media/eps.acf4fd6d5241ca31cb27.jpg",
     "static/media/projects.png": "/entrolabs/static/media/projects.8352af80be4cd3825d3a.png",
+    "static/media/experience.png": "/entrolabs/static/media/experience.6a813c759cfbe329f104.png",
     "static/media/experts.png": "/entrolabs/static/media/experts.081a514dde45b7cc564c.png",
     "static/media/bps.jpg": "/entrolabs/static/media/bps.e1ae4e5e075aaa060395.jpg",
     "static/media/mobile_solutions.jpg": "/entrolabs/static/media/mobile_solutions.fe04c14817f86f697b03.jpg",
@@ -77,12 +78,12 @@
     "static/media/sreenidhilogo.png": "/entrolabs/static/media/sreenidhilogo.cf2fecba7acdb8197b15.png",
     "static/media/DigiSprint.png": "/entrolabs/static/media/DigiSprint.05a739480cbffed5b226.png",
     "index.html": "/entrolabs/index.html",
-    "main.64bebd7d.css.map": "/entrolabs/static/css/main.64bebd7d.css.map",
-    "main.34ed8be4.js.map": "/entrolabs/static/js/main.34ed8be4.js.map",
+    "main.6908c78e.css.map": "/entrolabs/static/css/main.6908c78e.css.map",
+    "main.8af8e568.js.map": "/entrolabs/static/js/main.8af8e568.js.map",
     "453.a4249beb.chunk.js.map": "/entrolabs/static/js/453.a4249beb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.64bebd7d.css",
-    "static/js/main.34ed8be4.js"
+    "static/css/main.6908c78e.css",
+    "static/js/main.8af8e568.js"
   ]
 }
