@@ -1,12 +1,22 @@
 {
   "files": {
-    "main.css": "/entrolabs/static/css/main.92764711.css",
-    "main.js": "/entrolabs/static/js/main.83f1c8aa.js",
+    "main.css": "/entrolabs/static/css/main.64bebd7d.css",
+    "main.js": "/entrolabs/static/js/main.34ed8be4.js",
     "static/js/453.a4249beb.chunk.js": "/entrolabs/static/js/453.a4249beb.chunk.js",
+    "static/media/image 17.png": "/entrolabs/static/media/image 17.2c409e2dcd6ffe56f1e7.png",
+    "static/media/image 18.png": "/entrolabs/static/media/image 18.f65b03d58113b330ad87.png",
+    "static/media/image 2.png": "/entrolabs/static/media/image 2.ce78f227e955e13f6c20.png",
+    "static/media/image 4.png": "/entrolabs/static/media/image 4.9403888b5c03ff479464.png",
+    "static/media/image 16.png": "/entrolabs/static/media/image 16.c7e8587fb8133dd982f8.png",
+    "static/media/image 21.png": "/entrolabs/static/media/image 21.9446438928f25236d101.png",
+    "static/media/image 20.png": "/entrolabs/static/media/image 20.f37ae278c3d20541add4.png",
+    "static/media/image 19.png": "/entrolabs/static/media/image 19.853b1ef5067d404946c7.png",
+    "static/media/ct.png": "/entrolabs/static/media/ct.2ae6e78b9705dd19eb08.png",
     "static/media/cal.png": "/entrolabs/static/media/cal.945cda0b613d536d5680.png",
-    "static/media/clients.png": "/entrolabs/static/media/clients.849d6db4b4e47f352a19.png",
+    "static/media/clients.png": "/entrolabs/static/media/clients.6f5ae5441dcad81cf32a.png",
     "static/media/mobile.png": "/entrolabs/static/media/mobile.66ae4a9b24a46c0aa5e2.png",
     "static/media/web.png": "/entrolabs/static/media/web.df0335a7b8197a414947.png",
+    "static/media/careers.png": "/entrolabs/static/media/careers.59010462dee36524ec09.png",
     "static/media/about_image.jpeg": "/entrolabs/static/media/about_image.69b8da0e9013cd0f62e4.jpeg",
     "static/media/psn1.PNG": "/entrolabs/static/media/psn1.b12a53fb5980a740d14b.PNG",
     "static/media/bg_light.jpeg": "/entrolabs/static/media/bg_light.f4cf2764094fc29d8e23.jpeg",
@@ -16,9 +26,13 @@
     "static/media/bg_services.jpeg": "/entrolabs/static/media/bg_services.1353eeb0e78ffcf4206d.jpeg",
     "static/media/ps_2.jpeg": "/entrolabs/static/media/ps_2.c48adb1b061767f08be0.jpeg",
     "static/media/bg_plain.jpeg": "/entrolabs/static/media/bg_plain.689ebb2aa6f41914b55a.jpeg",
+    "static/media/counter-two-bg-shape.png": "/entrolabs/static/media/counter-two-bg-shape.a02cb93fbbd745cc536a.png",
     "static/media/10_plus.jpg": "/entrolabs/static/media/10_plus.46720124f75d0f43727a.jpg",
+    "static/media/award.png": "/entrolabs/static/media/award.64b0349e3f68af078d41.png",
     "static/media/spe.jpg": "/entrolabs/static/media/spe.de89753928da90c66703.jpg",
     "static/media/eps.jpg": "/entrolabs/static/media/eps.acf4fd6d5241ca31cb27.jpg",
+    "static/media/projects.png": "/entrolabs/static/media/projects.8352af80be4cd3825d3a.png",
+    "static/media/experts.png": "/entrolabs/static/media/experts.081a514dde45b7cc564c.png",
     "static/media/bps.jpg": "/entrolabs/static/media/bps.e1ae4e5e075aaa060395.jpg",
     "static/media/mobile_solutions.jpg": "/entrolabs/static/media/mobile_solutions.fe04c14817f86f697b03.jpg",
     "static/media/bg_dots.png": "/entrolabs/static/media/bg_dots.6a3fb2c5a0b3b70a25a2.png",
@@ -63,12 +77,12 @@
     "static/media/sreenidhilogo.png": "/entrolabs/static/media/sreenidhilogo.cf2fecba7acdb8197b15.png",
     "static/media/DigiSprint.png": "/entrolabs/static/media/DigiSprint.05a739480cbffed5b226.png",
     "index.html": "/entrolabs/index.html",
-    "main.92764711.css.map": "/entrolabs/static/css/main.92764711.css.map",
-    "main.83f1c8aa.js.map": "/entrolabs/static/js/main.83f1c8aa.js.map",
+    "main.64bebd7d.css.map": "/entrolabs/static/css/main.64bebd7d.css.map",
+    "main.34ed8be4.js.map": "/entrolabs/static/js/main.34ed8be4.js.map",
     "453.a4249beb.chunk.js.map": "/entrolabs/static/js/453.a4249beb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.92764711.css",
-    "static/js/main.83f1c8aa.js"
+    "static/css/main.64bebd7d.css",
+    "static/js/main.34ed8be4.js"
   ]
 }
