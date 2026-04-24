@@ -49,19 +49,25 @@
     z-index: -1;
 }
 
+.img_ct img {
+    width: 350px;
+}
+
 @media (max-width: 768px) {
     .img_ct {
         height: auto;
         position: absolute;
-        bottom: 0;
+        bottom: 100px;
         right: 0px;
         z-index: -1;
     }
+
+    .img_ct img {
+        width: 150px;
+    }
 }
 
-.img_ct img {
-    width: 350px;
-}
+
 
 .info-box {
     margin-top: 20px;
