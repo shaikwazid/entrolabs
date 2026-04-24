@@ -5,6 +5,10 @@ import { FaAward, FaUsers } from "react-icons/fa";
 import { motion } from "framer-motion";
 import ceo from "../../assets/persons/ceo.jpg";
 import cto from "../../assets/persons/cto.jpg";
+import projects from "../../assets/about/projects.png";
+import expertise from "../../assets/about/experts.png";
+import happyClients from "../../assets/about/clients.png";
+import awards from "../../assets/about/award.png";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import "./About.css";
 
@@ -13,22 +17,30 @@ const statsData = [
     {
         number: "250+",
         label: "Projects Completed",
-        img: "https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
+        img: projects,
+        color: "#4CAF50",
+        desc: 'Successfully delivered diverse projects across multiple industries with excellence.'
     },
     {
         number: "140+",
-        label: "Expert Developers",
-        img: "https://cdn-icons-png.flaticon.com/512/1995/1995574.png"
+        label: "Experts",
+        img: expertise,
+        color: "#2196F3",
+        desc: 'Highly skilled professionals dedicated to turning ideas into powerful digital solutions.'
     },
     {
         number: "60+",
         label: "Happy Clients",
-        img: "https://cdn-icons-png.flaticon.com/512/4140/4140048.png"
+        img: happyClients,
+        color: "#cc00ffff",
+        desc: 'Trusted by organizations worldwide for reliable IT solutions and continuous support.'
     },
     {
         number: "15+",
         label: "Awards Won",
-        img: "https://cdn-icons-png.flaticon.com/512/190/190411.png"
+        img: awards,
+        color: "#ffc400ff",
+        desc: 'Recognized globally for excellence in technology innovation and service delivery.'
     }
 ];
 
@@ -200,10 +212,13 @@ const About = () => {
                                 whileInView="visible"
                                 viewport={{ once: true }}
                                 whileHover={{ y: -12, scale: 1.05 }}
+                                style={{ borderBottom: `5px solid ${item.color}` }}
                             >
                                 <img src={item.img} alt="" />
-                                <h3>{item.number}</h3>
+                                <h3 style={{ color: item.color }}>{item.number}</h3>
                                 <p>{item.label}</p>
+                                <div className='d-flex gap-2 mb-2 align-items-center justify-content-center'><span style={{ width: '50px', height: '3px', backgroundColor: item.color, borderRadius: '30px' }}></span><span style={{ width: '4px', height: '4px', backgroundColor: item.color, borderRadius: '50%' }}></span></div>
+                                <p className="card-desc">{item.desc}</p>
                             </motion.div>
                         ))}
                     </div>

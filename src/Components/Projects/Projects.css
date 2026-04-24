@@ -86,10 +86,12 @@
 }
 
 .project-content h5 {
-    color: #493932;
+    color: #4f6339;
     margin-bottom: 10px;
     font-size: 15px;
     text-align: center;
+    font-weight: 700;
+
 }
 
 .project-content p {

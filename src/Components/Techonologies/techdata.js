@@ -1,3 +1,12 @@
+import technologies from "../../assets/technologies/image 2.png";
+import Integrations from "../../assets/technologies/image 4.png";
+import web1 from "../../assets/technologies/image 16.png";
+import web2 from "../../assets/technologies/image 17.png";
+import web3 from "../../assets/technologies/image 18.png";
+import api1 from "../../assets/technologies/image 19.png";
+import api2 from "../../assets/technologies/image 20.png";
+import api3 from "../../assets/technologies/image 21.png";
+
 export const techData = [
     {
         id: "mobile-app",
@@ -10,6 +19,7 @@ export const techData = [
         sections: [
             {
                 title: "Technologies",
+                img: technologies,
                 items: [
                     "Android (Java / Kotlin)",
                     "Flutter (Android, iOS, Web)",
@@ -19,6 +29,7 @@ export const techData = [
             },
             {
                 title: "Integrations",
+                img: Integrations,
                 items: [
                     "Facial Recognition",
                     "Bluetooth Printers",
@@ -40,6 +51,7 @@ export const techData = [
         sections: [
             {
                 title: "Frontend & Frameworks",
+                img: web1,
                 items: [
                     "React JS",
                     "Next JS",
@@ -48,6 +60,7 @@ export const techData = [
             },
             {
                 title: "Backend & Cloud",
+                img: web2,
                 items: [
                     "Node JS (Express, GraphQL)",
                     "PHP",
@@ -57,6 +70,7 @@ export const techData = [
             },
             {
                 title: "Integrations",
+                img: web3,
                 items: [
                     "WebRTC",
                     "WebSockets",
@@ -78,6 +92,7 @@ export const techData = [
         sections: [
             {
                 title: "Technologies",
+                img: api1,
                 items: [
                     "Node JS",
                     "PHP",
@@ -86,6 +101,7 @@ export const techData = [
             },
             {
                 title: "Cloud & Services",
+                img: api2,
                 items: [
                     "AWS",
                     "Google APIs",
@@ -95,6 +111,7 @@ export const techData = [
             },
             {
                 title: "Database",
+                img: api3,
                 items: [
                     "MySQL",
                     "MongoDB",

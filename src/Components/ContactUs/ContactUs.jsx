@@ -2,6 +2,8 @@ import React from 'react'
 import './ContactUs.css'
 import BreadCrumb from '../BreadCrumb/BreadCrumb'
 import { motion } from "framer-motion";
+import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import ct from "../../assets/ct.png";
 
 const ContactUs = () => {
 
@@ -48,7 +50,7 @@ const ContactUs = () => {
 
             <section className="contact-section">
                 <div className="container">
-                    <div className="row align-items-center">
+                    <div className="row ">
 
                         {/* LEFT SIDE */}
                         <motion.div
@@ -59,17 +61,23 @@ const ContactUs = () => {
                             viewport={{ once: true }}
                         >
                             <div className="contact-info">
-                                <h2>We'd love to hear From you.</h2>
+                                <h2><span>We'd love to hear From you.</span> </h2>
                                 <p>
                                     Join our smart missions by reaching out to Entrolabs. To schedule an appointment, feel free to use our contact form or simply drop us an email. We can arrange a phone or Skype call to connect.
                                 </p>
 
                                 {[
-                                    { title: "Email", value: "support@entrolabs.com" },
-                                    { title: "Phone", value: "+91-4042016637" },
+                                    { title: "Email", value: "support@entrolabs.com", icon: <FaEnvelope /> },
+                                    { title: "Phone", value: "+91-4042016637", icon: <FaPhone /> },
                                     {
                                         title: "Location",
-                                        value: "First Floor, Plot No:479, Road No:10, Kakatiya Hills, Madhapur, Hyderabad, Telangana 500081"
+                                        value: (
+                                            <>
+                                                First Floor, Plot No:479, Road No:10,<br />
+                                                Kakatiya Hills, Madhapur, <br /> Hyderabad, Telangana 500081
+                                            </>
+                                        ),
+                                        icon: <FaMapMarkerAlt />
                                     }
                                 ].map((item, i) => (
                                     <motion.div
@@ -77,17 +85,34 @@ const ContactUs = () => {
                                         key={i}
                                         variants={fadeUp}
                                     >
-                                        <h5>{item.title}</h5>
-                                        <p>{item.value}</p>
+
+                                        <div className="d-flex gap-2 ">
+                                            <span className="icon">{item.icon}</span>
+
+                                            <div className="">
+                                                <h5> {item.title}</h5>
+                                                <p>{item.value}</p>
+                                            </div>
+                                        </div>
+
                                     </motion.div>
                                 ))}
+
+
+                                <motion.div
+                                    className="img_ct"
+                                // variants={fadeUp}
+                                >
+                                    <img src={ct} alt="" />
+                                </motion.div>
+
                             </div>
                         </motion.div>
 
                         {/* RIGHT SIDE FORM */}
                         <motion.div
                             className="col-lg-6"
-                            variants={slideRight}
+                            variants={fadeUp}
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}
@@ -146,7 +171,7 @@ const ContactUs = () => {
 
                                     <motion.button
                                         type="submit"
-                                        className="btn-submit"
+                                        className="btn-53"
                                         whileHover={{ scale: 1.05 }}
                                         whileTap={{ scale: 0.95 }}
                                     >

@@ -23,17 +23,23 @@ const BreadCrumb = ({ title }) => {
                     </div>
                     {/* wave animation */}
                     <div className="shape-image-animation d-none d-md-block">
-                        <svg viewBox="0 180 2500 200" fill="#f9faf7">
-                            <path d="M 0 250 C 1200 400 1200 50 3000 250 L 3000 550 L 0 550 Z">
+                        <svg
+                            viewBox="0 0 1440 320"
+                            preserveAspectRatio="none"
+                            width="100%"
+                            height="100%"
+                            fill="#f9faf7"
+                        >
+                            <path>
                                 <animate
                                     attributeName="d"
                                     dur="5s"
                                     repeatCount="indefinite"
                                     values="
-                          M 0 250 C 1200 400 1200 50 3000 250 L 3000 550 L 0 550 Z;
-                          M 0 250 C 400 50 400 400 3000 250 L 3000 550 L 0 550 Z;
-                          M 0 250 C 1200 400 1200 50 3000 250 L 3000 550 L 0 550 Z
-                        "
+                                                    M0,160 C480,300 960,20 1440,160 L1440,320 L0,320 Z;
+                                                    M0,160 C240,20 720,300 1440,160 L1440,320 L0,320 Z;
+                                                    M0,160 C480,300 960,20 1440,160 L1440,320 L0,320 Z
+                                                    "
                                 />
                             </path>
                         </svg>

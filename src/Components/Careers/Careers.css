@@ -94,7 +94,8 @@
 .career-card {
     /* background: rgba(255, 255, 255, 0.65); */
     /* backdrop-filter: blur(14px); */
-    background-image: url("../../assets/bg_images/bg_services.jpeg");
+    background-image: url("../../assets/careers/careers.png");
+    /* background-image: url("../../assets/bg_images/bg_services.jpeg"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
