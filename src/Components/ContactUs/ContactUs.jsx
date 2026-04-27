@@ -35,14 +35,14 @@ const ContactUs = () => {
         }
     };
 
-    const slideRight = {
-        hidden: { opacity: 0, x: 60 },
-        visible: {
-            opacity: 1,
-            x: 0,
-            transition: { duration: 0.6 }
-        }
-    };
+    // const slideRight = {
+    //     hidden: { opacity: 0, x: 60 },
+    //     visible: {
+    //         opacity: 1,
+    //         x: 0,
+    //         transition: { duration: 0.6 }
+    //     }
+    // };
 
     return (
         <div>
@@ -180,6 +180,34 @@ const ContactUs = () => {
                                 </form>
                             </motion.div>
                         </motion.div>
+
+
+                        <div className="map-wrapper">
+                            <motion.div
+                                className="map-card"
+                                initial={{ opacity: 0, y: 60 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6, ease: "easeOut" }}
+                                viewport={{ once: true }}
+                            >
+                                <h5 className="map-title">Our Location</h5>
+
+                                <div className="map-container">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.7242800056083!2d78.3974106!3d17.444826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91bd248edeed%3A0x3173d4af4c28160a!2sEntro%20Labs%20IT%20Solutions%20Pvt%20Ltd!5e1!3m2!1sen!2sin!4v1777267339384!5m2!1sen!2sin"
+                                        width="100%"
+                                        height="100%"
+                                        style={{ border: 0 }}
+                                        allowFullScreen
+                                        loading="lazy"
+                                        referrerPolicy="no-referrer-when-downgrade"
+                                        title="Entro Labs Location"
+                                    ></iframe>
+                                </div>
+                            </motion.div>
+                        </div>
+
+
 
                     </div>
                 </div>

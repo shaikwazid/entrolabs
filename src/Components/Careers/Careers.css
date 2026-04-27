@@ -135,6 +135,12 @@
     color: #4f6339;
     margin-bottom: 10px;
     font-weight: 600;
+    background: #fff;
+    border-radius: 16px;
+    padding: 5px;
+    font-size: 19px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+
 }
 
 .career-card p {
@@ -142,7 +148,7 @@
 }
 
 .career-card:hover {
-    transform: translateY(-12px) scale(1.03);
+    transform: translateY(-6px) scale(1.03);
     box-shadow: 0 30px 80px rgba(0, 0, 0, 0.1);
 }
 
@@ -257,7 +263,7 @@
 
 /* hover effects */
 .job-card:hover {
-    transform: translateY(-12px);
+    transform: translateY(-6px);
     box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
 }
 

@@ -98,9 +98,13 @@ const Whychoose = () => {
 
 
 
+
                                     </div>
                                 </SwiperSlide>
+
+
                             ))}
+
 
 
                         </Swiper>
@@ -108,7 +112,10 @@ const Whychoose = () => {
                 </div>
 
 
+
             </div>
+
+
 
         </section>
     );

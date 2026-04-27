@@ -268,7 +268,7 @@
 .f_shape::before {
    content: "";
    position: absolute;
-   top: 0;
+   top: 0px;
    left: 0;
    width: 100%;
    height: 100%;

@@ -190,9 +190,14 @@ const Projects = () => {
                                     </div>
 
                                 </div>
+
+
                             </motion.div>
+
                         ))}
                     </motion.div>
+
+
 
                 </div>
             </section>

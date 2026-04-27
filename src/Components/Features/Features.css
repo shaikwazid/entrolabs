@@ -37,17 +37,55 @@
     /* border: 1px solid #f39c4a; */
     /* border-left: 1px solid #4f6339; */
 
-    transition: .3s ease;
+    transition: transform 0.3s ease;
     overflow: hidden;
     min-height: 170px;
     /* background: linear-gradient(rgb(255 207 0 / 18%), rgb(255 255 255 / 70%)), url('../../assets/bg_images/rays.jpg') center / cover no-repeat; */
 }
 
+
+
+.feature-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(90deg, rgba(166, 255, 0, 0.096), rgba(255, 255, 255, 0.468)),
+        url('../../assets/bg_images/rays.jpg') center / cover no-repeat;
+
+    background-size: 200% 100%, cover;
+    background-position: 0% 0%, center;
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 0;
+}
+
+/* Hover effect */
 .feature-card:hover {
     transform: translateY(-3px);
-    /* background: #4f6339; */
-    background: linear-gradient(rgba(166, 255, 0, 0.18), rgba(255, 255, 255, 0.468)), url('../../assets/bg_images/rays.jpg') center / cover no-repeat;
+}
 
+.feature-card:hover::before {
+    opacity: 1;
+    animation: gradientSlide 4s linear infinite;
+}
+
+/* Keep content above overlay */
+.feature-card>* {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes gradientSlide {
+    0% {
+        background-position: 0% 0%, center;
+    }
+
+    100% {
+        background-position: 100% 0%, center;
+    }
 }
 
 

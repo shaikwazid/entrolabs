@@ -261,7 +261,7 @@ const About = () => {
                         >
                             <div className="history-content">
 
-                                <span className="badge">OVER 9+ YEARS EXPERIENCE</span>
+                                <span className="badge">OVER 10+ YEARS EXPERIENCE</span>
                                 {/* <h5 className="experience">OVER 9+ YEARS EXPERIENCE</h5> */}
 
                                 <h2>Our History</h2>
