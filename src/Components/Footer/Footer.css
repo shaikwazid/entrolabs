@@ -136,15 +136,16 @@
 }
 
 .ve-footer-bottom-inner {
-   display: flex;
+   /* display: flex;
    justify-content: space-between;
-   flex-wrap: wrap;
+   flex-wrap: wrap; */
 }
 
 .ve-footer-bottom-inner p {
    font-size: 15px;
    color: #fff;
    margin-bottom: 0px;
+   text-align: center;
 }
 
 .ve-footer-bottom-inner ul {

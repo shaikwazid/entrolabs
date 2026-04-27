@@ -93,14 +93,14 @@ const Footer = () => {
         <div className="container">
           <div className="ve-footer-bottom-inner">
             <p>
-              © {new Date().getFullYear()} Entro Labs. All Rights Reserved
+              © 2016 - {new Date().getFullYear()} EntroLabs IT Solutions Pvt Ltd. All Rights Reserved.
             </p>
 
-            <ul>
+            {/* <ul>
               <li><NavLink to="/privacy">Privacy Policy</NavLink></li>
               <li><NavLink to="/terms">Terms of Use</NavLink></li>
               <li><NavLink to="/cookies">Cookie Policy</NavLink></li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </div>

@@ -159,11 +159,15 @@ const Stats = () => {
                 className="stat-card"
                 key={i}
                 variants={fadeUp}
-                initial="hidden"
-                whileInView="visible"
+                // initial="hidden"
+                initial={{ opacity: 0, y: 80 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.2 }}
+                // whileInView="visible"
                 viewport={{ once: true }}
                 whileHover={{ y: -12, scale: 1.05 }}
                 style={{ borderBottom: `5px solid ${item.color}` }}
+
               >
                 <img src={item.img} alt="" />
                 <h3 style={{ color: item.color }}>{item.number}</h3>
